@@ -1,0 +1,10 @@
+{
+"schema_name" : "humanresources" ,
+"retry_val": 3 ,
+"conn_config" : "../connection_configs/postgres_db_connection_info.json" , 
+"table_names" : ["department","employeepayhistory","jobcandidate","shift","employeedepartmenthistory"] ,
+"database_name": "adventureworks"
+}
+
+
+
