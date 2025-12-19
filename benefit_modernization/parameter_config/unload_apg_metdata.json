@@ -1,0 +1,25 @@
+{
+"conn_config" : "../connection_config/postgres_db_connection_info.json" , 
+"table_names" : ["admissions","appointments","audit_logs","beds","bills","clinical_notes","departments","diagnoses","doctors","equipment_inventory","imaging_files","insurance_plans","insurance_providers","lab_orders","lab_results","medication_orders","medications","medicines","nurses","patient_addresses","patient_allergies","patient_checkins","patient_contacts","patient_identifiers","patient_insurance","patient_medical_history","patients","payments","pharmacy_orders","pharmacy_stock","procedures","radiology_orders","room_assignments","staff","staff_roles","suppliers","user_accounts","user_roles","vitals","wards"] ,
+"source_database_name": "Healthcare",
+"source_schema_name": "benadmin",
+"databricks_catalog_name": "benefit_modernization_dev",
+"join_keys" :  [ {"staff" : ["staff_id"] },{ "departments" : ["department_id"] } ,{"staff_roles" :["role_id"] }  ,
+              {"insurance_providers" : ["provider_id"] },{ "suppliers" : ["supplier_id"] },{"medicines" :["medicine_id"] }  ,
+              {"procedures" : ["procedure_id"] },{ "patients" : ["patient_id"]} ,{"doctors" :["doctor_id"] }  ,
+              {"nurses" : ["nurse_id"] },{ "patient_addresses" : ["address_id"] },{"patient_contacts" :["contact_id"] }  ,
+              {"patient_identifiers" : ["identifier_id"] },{ "patient_allergies" : ["allergy_id"] },{"patient_medical_history" :["history_id"] }  ,
+              {"appointments" : ["appointment_id"] },{ "patient_checkins" : ["checkin_id"]} ,{"clinical_notes" :["note_id"] }  ,
+              {"vitals" : ["vital_id"] },{ "diagnoses" : ["diagnosis_id"]} ,{"medications" :["medication_id"] }  ,
+              {"medication_orders" : ["medication_order_id"] },{ "lab_orders" : ["lab_order_id"] } ,{"lab_results" :["result_id"] }  ,
+              {"radiology_orders" : ["radiology_order_id"] },{ "imaging_files" : ["file_id"] } ,{"wards" :["ward_id"] }  ,
+              {"insurance_plans" : ["plan_id"] },{ "patient_insurance" : ["patient_insurance_id"] },{"bills" :["bill_id"] }  ,
+              {"payments" : ["payment_id"] },{ "pharmacy_stock" : ["stock_id"] },{"pharmacy_orders" :["pharmacy_order_id"] }  ,
+              {"equipment_inventory" : ["equipment_id"] },{ "user_accounts" : ["user_id"] },{"user_roles" :["user_id"] }  ,
+              {"audit_logs" : ["audit_id"] },{ "admissions" : ["admission_id"] },{"room_assignments" :["assignment_id"] },
+              {"beds" : ["bed_is"] }  ]
+              
+}
+
+
+

@@ -1,0 +1,6 @@
+{
+"server_url":"benmdrnz2025.postgres.database.azure.com" ,
+"server_port_number":5432 ,
+"server_env":"dev" ,
+"server_scope_name":"credpostgres"
+}
